@@ -61,6 +61,12 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    //<<<<<<<<<<<<<<<<<<<<<<<ORDER TOTAL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void calling_calculate_order_total_amount_with_item_names_should_return_total_amount_to_be_displayed(){
+        assertEquals(388, restaurant.calculateOrderTotalAmount("Sweet corn soup", "Vegetable lasagne"));
+    }
+    //<<<<<<<<<<<<<<<<<<<<<<<ORDER TOTAL>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //<<<<<<<<<<<<<<<<<<<<<<<DISPLAY DETAILS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     @Test

@@ -27,6 +27,10 @@ public class Restaurant {
         return  LocalTime.now();
     }
 
+    public int calculateOrderTotalAmount(String ...itemNames){
+       return 0;
+    }
+
     public List<Item> getMenu() {
         //DELETE ABOVE RETURN STATEMENT AND WRITE CODE HERE
         return this.menu;
