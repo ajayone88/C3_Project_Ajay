@@ -28,7 +28,11 @@ public class Restaurant {
     }
 
     public int calculateOrderTotalAmount(String ...itemNames){
-       return 0;
+        int totalAmount = 0;
+        for(String name: itemNames){
+            totalAmount += findItemByName(name).getPrice();
+        }
+        return totalAmount;
     }
 
     public List<Item> getMenu() {
